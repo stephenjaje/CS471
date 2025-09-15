@@ -1,14 +1,90 @@
 <!DOCTYPE html>
+<!--
+  Change log:
+    * DRR - Coverted the baseline template to use daisyui (https://daisyui.com/components/) as a temp PoC until we vote on it
+    * DRR - Converted the original 256x256 png logo to ico using: `convert logo.png -alpha on -resize 256x256 -define icon:auto-resize="256,128,96,64,48,32,16" favicon.ico`
+    * DRR - Added logos
+    * DRR - Added navbar to index.html / project.html
+    * DRR - Added FAQ
+    * DRR - Added base line (single word "placeholder") user pages
+-->
+
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" sizes="32x32">
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
 
     <body>
-        <div style="position: absolute; top: 50%; left: 50%; -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%);">
-            <h1>Initial Index.html</h1>
-            <h2><a href="project.html">View Project.html</a></h2>
+        <!-- NAV BAR-->
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li>
+                            <details close>
+                                <summary>Team members</summary>
+                                <ul>
+                                    <li><a href="team-member/levi.html">Levi Duncan</a></li>
+                                    <li><a href="team-member/stephen.html">Stephen Jaje</a></li>
+                                    <li><a href="team-member/chase.html">Chase Kibler</a></li>
+                                    <li><a href="team-member/damian.html">Damian Reyes</a></li>
+                                    <li><a href="team-member/damar.html">Damar Vaccianna</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">Team 01 - User Services and Systems Rubicon</a>
+        </div>
+            <div class="navbar-end">
+                <div class="avatar">
+                    <div class="w-8 rounded">
+                        <img
+                        src="logo_team01.png"
+                        alt="Logo"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Content FAQ-->
+        <div class="flex flex-col min-h-screen w-full">
+            <div class="card bg-transparent rounded-none w-full min-h-screen flex items-center justify-center">
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title font-semibold">How to use?</div>
+                    <div class="collapse-content text-sm">Click upper right menu for navigation between pages</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">Why is our name the way it is?</div>
+                    <div class="collapse-content text-sm">After long deliberation, it was voted that our name would be <strong>User Services and Systems Rubicon</strong></div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">Is there meaning behind it?</div>
+                    <div class="collapse-content text-sm">Yes</div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title font-semibold">Who's the team behind this project?</div>
+                    <div class="collapse-content text-sm">* Levi Duncan </br> * Stephen Jaje </br> * Chase Kibler </br> * Damian Reyes </br> * Damar Vaccianna</div>
+                </div>
+                
+            </div>
         </div>
     </body>
 </html>
