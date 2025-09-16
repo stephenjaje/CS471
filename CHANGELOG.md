@@ -9,3 +9,6 @@
 * DRR - Fixed image/logo href locations/title ([index.html](index.html) / [project.html](project.html) / [damian.html](damian.html))
 * DRR - Added [user template](/team-member/user-template.html) for help with user pages
 * DRR - Moved change log to dedicated file [CHANGELOG.md](CHANGELOG.md)
+* LD - Added user page [levi.html](/team-member/levi.html)
+* CL - Added user page [chase.html](/team-member/chase.html)
+* DRR - Fixed href for hyperlinks ([levi.html](/team-member/levi.html), [chase.html](/team-member/chase.html))
