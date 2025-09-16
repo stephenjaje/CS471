@@ -7,10 +7,15 @@
 * DRR - Added base line (single word "placeholder") user pages
 * DRR - Fixed page href locations/title ([index.html](index.html) / [project.html](project.html) / [damian.html](damian.html))
 * DRR - Fixed image/logo href locations/title ([index.html](index.html) / [project.html](project.html) / [damian.html](damian.html))
-* DRR - Added [user template](/team-member/user-template.html) for help with user pages
+* DRR - Added [user template](/user-template.html) for help with user pages
 * DRR - Moved change log to dedicated file [CHANGELOG.md](CHANGELOG.md)
-* LD - Added user page [levi.html](/team-member/levi.html)
-* CL - Added user page [chase.html](/team-member/chase.html)
-* DRR - Fixed href for hyperlinks ([levi.html](/team-member/levi.html), [chase.html](/team-member/chase.html))
+* LD - Added user page [levi.html](/levi.html)
+* CL - Added user page [chase.html](/chase.html)
+* DRR - Fixed href for hyperlinks ([levi.html](/levi.html), [chase.html](/chase.html))
 * DRR - Updated project page [project.html](/project.html)
-* DRR - Updated user page [damian.html](/team-member/damian.html)
+* DRR - Updated user page [damian.html](/damian.html)
+* SJ - Added user page [stephen.html](/stephen.html)
+* DRR - Fixed link issue cross platform
+* LD - updated index.html presentation
+* LD - updated project.html presentation
+* DV - added user page
