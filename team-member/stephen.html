@@ -1,1 +1,114 @@
-placeholder
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About Stephen Jaje</title>
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a href="/index.html">Homepage</a></li>
+                    <li><a href="/project.html">Project</a></li>
+                    <li>
+                        <details close>
+                            <summary>Team Members</summary>
+                            <ul>
+                                <li><a href="/team-member/levi.html">Levi Duncan</a></li>
+                                <li><a href="/team-member/stephen.html">Stephen Jaje</a></li>
+                                <li><a href="/team-member/chase.html">Chase Kibler</a></li>
+                                <li><a href="/team-member/damian.html">Damian Reyes</a></li>
+                                <li><a href="/team-member/damar.html">Damar Vaccianna</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">About Stephen Jaje</a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="avatar">
+                <div class="w-8 rounded">
+                    <img src="/logo_team01.png" alt="Logo" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col items-center justify-center min-h-screen bg-base-200 p-8">
+        <!-- Profile Card -->
+        <div class="card w-full max-w-3xl bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+                <div class="avatar">
+                    <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 mb-4">
+                        <img src="stephen_pic.jpeg" alt="Levi Duncan" />
+                    </div>
+                </div>
+                <h1 class="text-3xl font-bold">Stephen Jaje</h1>
+                <p class="text-sm text-gray-500">Team Member</p>
+                <p class="mt-4">
+                    Hey! My name is Stephen Jaje and I am studying software engineering at Radford University.
+                    I enlisted in the national guard and took a scholarship from Army ROTC to commision as an officer.
+                    I was originally born in Ratchaburi, Thailand and have grown up in a military family going from
+                    Japan -> Lousiana -> Kentucky -> and finishing up in Virginia.
+                </p>
+            </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card w-full max-w-3xl bg-base-100 shadow-md mt-8">
+            <div class="card-body">
+                <h2 class="card-title">Skills</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <div class="badge badge-primary">Java</div>
+                    <div class="badge badge-secondary">HTML</div>
+                    <div class="badge badge-accent">SQL</div>
+                    <div class="badge badge-neutral">CSS</div>
+                    <div class="badge badge-info">AWS</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fun Facts Card -->
+        <div class="card w-full max-w-3xl bg-base-100 shadow-md mt-8">
+            <div class="card-body">
+                <h2 class="card-title">Fun Facts</h2>
+                <p><strong>Fun Facts:</strong> I am Airborne and Air Assault qualified</p>
+                <p><strong>Hobbies:</strong> Video games, running, working out, hanging out with friends </p>
+                <p><strong>Favorite Video Game:</strong> Rainbow six siege, GTA 5, & Outlast Trials</p>
+            </div>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="card w-full max-w-3xl bg-base-100 shadow-md mt-8">
+            <div class="card-body">
+                <h2 class="card-title">Contact</h2>
+                <p>Email: <a href="mailto:sjaje@radford.edu" class="link link-primary">sjaje@radford.edu</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/stephen-jaje-1477b8154/" class="link link-primary"
+                        target="_blank">https://www.linkedin.com/in/stephen-jaje-1477b8154/</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
