@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Team 01: USSR</title>
-        <link rel="icon" href="./favicon.ico" sizes="32x32">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Team 01: USSR - Project</title>
+    <link rel="icon" href="./favicon.ico" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 
-    <body>
-        <!-- NAV BAR-->
-        <div class="navbar bg-base-100 shadow-sm">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a href="./index.html">Homepage</a></li>
-                        <li><a href="./project.html">Project</a></li>
-                        <li>
-                            <details close>
-                                <summary>Team members</summary>
-                                <ul>
-                                    <li><a href="./levi.html">Levi Duncan</a></li>
-                                    <li><a href="./stephen.html">Stephen Jaje</a></li>
-                                    <li><a href="./chase.html">Chase Kibler</a></li>
-                                    <li><a href="./damian.html">Damian Reyes</a></li>
-                                    <li><a href="./damar.html">Damar Vaccianna</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                    </ul>
-            </div>
-        </div>
-        <div class="navbar-center">
-            <a class="btn btn-ghost text-xl">Team 01 - User Services and Systems Rubicon</a>
-        </div>
-            <div class="navbar-end">
-                <div class="avatar">
-                    <div class="w-8 rounded">
-                        <img
-                        src="./logo_team01.png"
-                        alt="Logo"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="flex flex-col min-h-screen w-full">
-            <div class="card bg-transparent rounded-none w-full min-h-screen flex items-center justify-center">
-                <ul class="menu bg-base-100 w-full rounded-box">
-                    <li>
-                        <details open>
-                            <summary>Microservices</summary>
-                            <ul>
-                                <li>
-                                    <details open>
-                                        <summary>Auth & Federation</summary>
-                                        <ul>
-                                            <li><a>Cognito User Pools for signup/signin, MFA, passwordless</a></li>
-                                            <li><a>Cognito Identity Pools for IAM-backed identities for apps</a></li>
-                                            <li><a>API Gateway + Lambda Authorizer for JWT/token enforcement</a></li>
-                                            <li><a>Amazon Verified Permissions for fine-grained auth (Cedar)</a></li>
-                                            <li><a>Route 53 + ACM + CloudFront for secure auth domains</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>User Profiles & Storage</summary>
-                                        <ul>
-                                            <li><a>DynamoDB (or Aurora Serverless v2) for profile records</a></li>
-                                            <li><a>S3 for avatars, attachments; S3 Object Lambda for transforms</a></li>
-                                            <li><a>API Gateway + Lambda for profile CRUD APIs</a></li>
-                                            <li><a>DynamoDB Streams + Lambda for reactive updates</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Roles, Orgs & Permissions</summary>
-                                        <ul>
-                                            <li><a>Cognito Groups / Custom Claims for student/faculty/admin</a></li>
-                                            <li><a>Verified Permissions for ABAC/RBAC policy decisions</a></li>
-                                            <li><a>EventBridge for role/permission change events</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Sessions & Device Trust</summary>
-                                        <ul>
-                                            <li><a>Cognito for token lifetimes, refresh, revocation</a></li>
-                                            <li><a>CloudFront + ALB (if needed) for session-aware edges</a></li>
-                                            <li><a>DynamoDB for device registry & session blacklist</a></li>
-                                            <li><a>Lambda@Edge (optional) for header/cookie gates</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Notifications & Preferences</summary>
-                                        <ul>
-                                            <li><a>SNS for fan-out events to services</a></li>
-                                            <li><a>SES / Pinpoint for email & SMS; preference center</a></li>
-                                            <li><a>DynamoDB for user comms preferences</a></li>
-                                            <li><a>EventBridge for “UserCreated”, “RoleChanged”, etc.</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Directory/SSO Integration (Campus)</summary>
-                                        <ul>
-                                            <li><a>Cognito Federation for SAML/OIDC to campus IdP</a></li>
-                                            <li><a>Lambda + Step Functions for nightly roster sync jobs</a></li>
-                                            <li><a>SQS DLQ for resilient sync pipeline</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                                <li>
-                                    <details>
-                                        <summary>Admin Console & Self-Service</summary>
-                                        <ul>
-                                            <li><a>CloudFront + S3 for static admin SPA hosting</a></li>
-                                            <li><a>API Gateway + Lambda for admin APIs (suspend, reset MFA)</a></li>
-                                            <li><a>Verified Permissions for admin UI policy guardrails</a></li>
-                                        </ul>
-                                    </details>
-                                </li>
-                            </ul>
-                        </details>
-                    </li>
+  <body class="bg-base-200">
+    <!-- NAV BAR-->
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a href="./index.html">Homepage</a></li>
+            <li><a href="./project.html">Project</a></li>
+            <li>
+              <details close>
+                <summary>Team members</summary>
+                <ul>
+                  <li><a href="./levi.html">Levi Duncan</a></li>
+                  <li><a href="./stephen.html">Stephen Jaje</a></li>
+                  <li><a href="./chase.html">Chase Kibler</a></li>
+                  <li><a href="./damian.html">Damian Reyes</a></li>
+                  <li><a href="./damar.html">Damar Vaccianna</a></li>
                 </ul>
-            </div>
+              </details>
+            </li>
+          </ul>
         </div>
-    </body>
+      </div>
+
+      <div class="navbar-center">
+        <a class="btn btn-ghost text-xl font-bold text-primary">
+          Team 01 - User Services and Systems Rubicon
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="avatar">
+          <div class="w-8 rounded">
+            <img src="./logo_team01.png" alt="Logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="text-center mt-12 mb-8">
+      <h1 class="text-4xl font-extrabold text-primary">Our Project</h1>
+      <p class="text-base mt-2 text-gray-600 max-w-2xl mx-auto">
+        Our <strong>“All About Us!”</strong> project integrates AWS microservices to deliver
+        secure authentication, user profiles, permissions, and notifications. This page
+        highlights the core services we selected to support scalability, security, and reliability.
+      </p>
+    </section>
+
+    <!-- MICROSERVICES LIST -->
+    <div class="flex flex-col w-full">
+      <div class="card bg-transparent rounded-none w-full flex items-center justify-center">
+        <div class="w-full max-w-4xl space-y-4">
+          <ul class="menu bg-base-100 w-full rounded-box p-4">
+
+            <!-- Auth & Federation -->
+            <li>
+              <details open>
+                <summary class="font-bold text-primary">Auth & Federation</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>Cognito User Pools for signup/signin, MFA, passwordless</li>
+                  <li>Cognito Identity Pools for IAM-backed identities for apps</li>
+                  <li>API Gateway + Lambda Authorizer for JWT/token enforcement</li>
+                  <li>Verified Permissions for fine-grained auth (Cedar)</li>
+                  <li>Route 53 + ACM + CloudFront for secure auth domains</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- User Profiles & Storage -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">User Profiles & Storage</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>DynamoDB (or Aurora Serverless v2) for profile records</li>
+                  <li>S3 for avatars, attachments; S3 Object Lambda for transforms</li>
+                  <li>API Gateway + Lambda for profile CRUD APIs</li>
+                  <li>DynamoDB Streams + Lambda for reactive updates</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Roles, Orgs & Permissions -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">Roles, Orgs & Permissions</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>Cognito Groups / Custom Claims for student/faculty/admin</li>
+                  <li>Verified Permissions for ABAC/RBAC policy decisions</li>
+                  <li>EventBridge for role/permission change events</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Sessions & Device Trust -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">Sessions & Device Trust</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>Cognito for token lifetimes, refresh, revocation</li>
+                  <li>CloudFront + ALB (if needed) for session-aware edges</li>
+                  <li>DynamoDB for device registry & session blacklist</li>
+                  <li>Lambda@Edge (optional) for header/cookie gates</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Notifications & Preferences -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">Notifications & Preferences</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>SNS for fan-out events to services</li>
+                  <li>SES / Pinpoint for email & SMS; preference center</li>
+                  <li>DynamoDB for user comms preferences</li>
+                  <li>EventBridge for “UserCreated”, “RoleChanged”, etc.</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Directory/SSO Integration -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">Directory/SSO Integration (Campus)</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>Cognito Federation for SAML/OIDC to campus IdP</li>
+                  <li>Lambda + Step Functions for nightly roster sync jobs</li>
+                  <li>SQS DLQ for resilient sync pipeline</li>
+                </ul>
+              </details>
+            </li>
+
+            <!-- Admin Console & Self-Service -->
+            <li>
+              <details>
+                <summary class="font-bold text-primary">Admin Console & Self-Service</summary>
+                <ul class="space-y-2 pl-4">
+                  <li>CloudFront + S3 for static admin SPA hosting</li>
+                  <li>API Gateway + Lambda for admin APIs (suspend, reset MFA)</li>
+                  <li>Verified Permissions for admin UI policy guardrails</li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer footer-center p-4 bg-base-100 text-base-content mt-12">
+      <aside>
+        <p>© 2025 Team 01: User Services and Systems Rubicon</p>
+      </aside>
+    </footer>
+  </body>
 </html>
