@@ -12,3 +12,5 @@
 * LD - Added user page [levi.html](/team-member/levi.html)
 * CL - Added user page [chase.html](/team-member/chase.html)
 * DRR - Fixed href for hyperlinks ([levi.html](/team-member/levi.html), [chase.html](/team-member/chase.html))
+* DRR - Updated project page [project.html](/project.html)
+* DRR - Updated user page [damian.html](/team-member/damian.html)

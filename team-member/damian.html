@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="styles.css" />
         <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     </head>
 
     <body>
@@ -36,7 +37,6 @@
             </div>
         </div>
         <div class="navbar-center">
-            <!-- user@kl ~ $ whoami </br> Damian Reyes -->
             <a class="btn normal-case text-xl w-[24ch] h-15 font-mono
             bg-[#000100] hover:bg-[#000100] active:bg-[#000100] border border-[#161616]
             flex flex-col items-start gap-0 leading-tight text-left">
@@ -78,14 +78,432 @@
                             <div>
                                 <h1 class="text-3xl font-bold">Hello there</h1>
                                 <p class="opacity-80">
-                                    I build <strong>secure networked tools</strong>, tinker with tech, and enjoy knowledge acquisition and implementation
+                                    TLDR: I build <strong>secure networking tools</strong>, tinker with tech, and enjoy knowledge acquisition and implementation. It started with a small HP 2GB laptop in highschool, now it's evolved to a fully deployed homelab with 30+ devices (severs, switches, routers, computers).
                                 </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="badge badge-outline">Go</span>
-                                    <span class="badge badge-outline">Python</span>
-                                    <span class="badge badge-outline">Tailwind + daisyUI</span>
-                                    <span class="badge badge-outline">SQLite</span>
-                                </div>
+<!-- Top-level categories -->
+<div class="mt-3 flex flex-wrap gap-2">
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-linux').showModal()">
+    Linux/Unix
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-langs').showModal()">
+    Languages
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-tools').showModal()">
+    Tools/Software
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip tooltip-open"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-coor').showModal()">
+    Containers/Orchestration
+  </button> 
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-vihy').showModal()">
+    Virtualization & Hypervisors
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-da').showModal()">
+    Databases
+  </button> 
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-deti').showModal()">
+    Dev Tools & IDEs
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-net').showModal()">
+    Networking
+  </button>
+
+  <button type="button"
+          class="badge badge-outline cursor-pointer tooltip"
+          data-tip="Click me!"
+          onclick="document.getElementById('modal-hwc').showModal()">
+    Hardware
+  </button>
+</div>
+
+<!--
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon--plain colored text-base"></i>
+            
+          </span>
+        -->
+
+<!-- Linux/Unix modal -->
+<dialog id="modal-linux" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Linux/Unix</h3>
+        <p class="opacity-70">Worked in:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-debian-plain colored text-base"></i>
+            Debian
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-ubuntu-plain colored text-base"></i>
+            Ubuntu
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-linuxmint-plain colored"></i>
+            Linux Mint
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://www.qubes-os.org/attachment/icons/qubes-logo-home.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            QubesOS
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://www.openbsd.org/favicon.ico" alt="" class="w-4 h-4" aria-hidden="true">
+            OpenBSD
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-kalilinux-original colored text-base"></i>
+            Kali Linux
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-windows11-original colored text-base"></i>
+            Windows 11/10/8
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<!-- Languages modal -->
+<dialog id="modal-langs" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Languages</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-batch-plain colored text-base"></i>
+            Batch
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-awk-plain-wordmark colored"></i>
+            AWK
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-bash-plain colored text-base"></i>
+            Bash
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-python-plain colored text-base"></i>
+            Python
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-rust-plain colored text-base"></i>
+            Rust
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-go-original-wordmark colored"></i>
+            Golang
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-java-plain colored text-base"></i>
+            Java
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-javascript-plain colored text-base"></i>
+            Javascript
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<!-- Tools/Software modal -->
+<dialog id="modal-tools" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Tools / Software</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-forgejo-plain colored text-base"></i>
+            Forjego
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/caddy.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            Caddy
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-nginx-plain colored text-base"></i>
+            Nginx
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-apache-plain colored text-base"></i>
+            Apache
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-opencv-plain colored text-base"></i>
+            OpenCV
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-tailwindcss-plain colored text-base"></i>
+            Tailwindcss (Literally this site)
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<dialog id="modal-coor" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Containers/Orchestration</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-docker-plain colored text-base"></i>
+            Docker
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-k3s-original colored text-base"></i>
+            K3s
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-kubernetes-plain colored text-base"></i>
+            Kubernetes
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-podman-plain colored text-base"></i>
+            Podman
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<dialog id="modal-vihy" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Virtualization & Hypervisors</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-proxmox-plain colored text-base"></i>
+            PBS
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-proxmox-plain colored"></i>
+            Proxmox
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://www.virtualbox.org/favicon.ico" alt="" class="w-4 h-4" aria-hidden="true">
+            VirtualBox
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/qemu.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            QEMU
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+<dialog id="modal-da" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Databases</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-postgresql-plain colored text-base"></i>
+            Postgresql
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-sqlite-plain colored text-base"></i>
+            SQLite
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+<dialog id="modal-deti" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Dev Tools & IDEs</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-androidstudio-plain colored text-base"></i>
+            Android Studio
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-eclipse-plain colored"></i>
+            Eclipse IDE
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-vscodium-plain colored text-base"></i>
+            VSCodium
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-selenium-plain colored text-base"></i>
+            Selenium
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+<!-- Networks modal -->
+<dialog id="modal-net" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Networking</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/openwrt.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            OpenWRT
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/opnsense.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            OPNsense
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/netgear.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            Netgear
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/tp-link.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            TP-Link
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+<!-- Hardware modal -->
+<dialog id="modal-hwc" class="modal">
+  <div class="modal-box p-0">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <div class="card bg-base-200 rounded-box">
+      <div class="card-body">
+        <h3 class="card-title">Hardware</h3>
+        <p class="opacity-70">Worked with:</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-aarch64-plain colored"></i>
+            AARCH64
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-arduino-plain colored text-base"></i>
+            Arduino
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <i class="devicon-raspberrypi-plain colored text-base"></i>
+            Raspberry PI
+          </span>
+          <span class="badge badge-outline inline-flex items-center gap-2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/AMD64_Logo.svg" alt="" class="w-4 h-4" aria-hidden="true">
+            AMD64
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
                             </div>
                         </div>
                     </header>
@@ -96,9 +514,39 @@
                             <div class="card-body">
                                 <h2 class="card-title">Selected Work</h2>
                                 <ul class="list-disc pl-4 space-y-1">
-                                    <li><a class="link" href="#">Encrypted UDP gateway (Go)</a></li>
-                                    <li><a class="link" href="#">Image dedup + CLIP search</a></li>
-                                    <li><a class="link" href="#">Global VPS intranet</a></li>
+                                    <li><a class="link" onclick="my_modal_2.showModal()">Encrypted UDP gateway (Go)</a></li>
+                                    <dialog id="my_modal_2" class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Picture:</h3>
+                                            <p class="py-4">Press ESC key or click outside to close</p>
+                                            <img src="damian_gateway.png" alt="">
+                                        </div>
+                                        <form method="dialog" class="modal-backdrop">
+                                            <button>close</button>
+                                        </form>
+                                    </dialog>
+                                    <li><a class="link" onclick="my_modal_3.showModal()">Image dedup + CLIP search</a></li>
+                                    <dialog id="my_modal_3" class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Picture:</h3>
+                                            <p class="py-4">Press ESC key or click outside to close</p>
+                                            <img src="damian_hashing.png" alt="">
+                                        </div>
+                                        <form method="dialog" class="modal-backdrop">
+                                            <button>close</button>
+                                        </form>
+                                    </dialog>
+                                    <li><a class="link"  onclick="my_modal_4.showModal()">Global VPS intranet</a></li>
+                                    <dialog id="my_modal_4" class="modal">
+                                        <div class="modal-box">
+                                            <h3 class="text-lg font-bold">Picture:</h3>
+                                            <p class="py-4">Press ESC key or click outside to close</p>
+                                            <img src="damian_limited-version.png" alt="">
+                                        </div>
+                                        <form method="dialog" class="modal-backdrop">
+                                            <button>close</button>
+                                        </form>
+                                    </dialog>
                                 </ul>
                             </div>
                         </div>
@@ -114,11 +562,13 @@
                         </div>
                     </section>
 
+
+                    
                     <!-- Bio -->
                     <section class="prose">
                         <h2>Bio</h2>
-                        <p>
-                            I'll do this later
+                        <p class="">
+                            Born (for all intends and purposes) to be another statistic, I latched onto the <i>once-in-a-lifetime</i> opportunity to keep moving up. I <strong>refuse</strong> to let go now. Ever since then, I have done everything possible to expand my knowledge reservoirs, however, that means nothing without implementation, so I constantly implement new skills to my real world issues. My goal (short term), is to get this B.S. then the XP will get pumped into the other facets that were ignored to achieve the this goal.
                         </p>
                     </section>
 
@@ -128,6 +578,10 @@
                         <div class="mt-2 space-x-3">
                             <a class="link" href="https://github.com/dr-reyes">GitHub</a>
                             <a class="link" href="https://gitlab.com/drr-">GitLab</a>
+                            <div class="indicator">
+                                <span class="indicator-item badge badge-secondary">11</span>
+                                <div class=" grid h-13 w-15 place-items-center"><a class="link" href="https://www.credly.com/users/damian-rebollar-reyes">Credly</a></div>
+                            </div>
                         </div>
                     </footer>
                 </section>                

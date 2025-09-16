@@ -54,11 +54,90 @@
 
         <div class="flex flex-col min-h-screen w-full">
             <div class="card bg-transparent rounded-none w-full min-h-screen flex items-center justify-center">
-                
-                
-                placeholder
-
-                
+                <ul class="menu bg-base-100 w-full rounded-box">
+                    <li>
+                        <details open>
+                            <summary>Microservices</summary>
+                            <ul>
+                                <li>
+                                    <details open>
+                                        <summary>Auth & Federation</summary>
+                                        <ul>
+                                            <li><a>Cognito User Pools for signup/signin, MFA, passwordless</a></li>
+                                            <li><a>Cognito Identity Pools for IAM-backed identities for apps</a></li>
+                                            <li><a>API Gateway + Lambda Authorizer for JWT/token enforcement</a></li>
+                                            <li><a>Amazon Verified Permissions for fine-grained auth (Cedar)</a></li>
+                                            <li><a>Route 53 + ACM + CloudFront for secure auth domains</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>User Profiles & Storage</summary>
+                                        <ul>
+                                            <li><a>DynamoDB (or Aurora Serverless v2) for profile records</a></li>
+                                            <li><a>S3 for avatars, attachments; S3 Object Lambda for transforms</a></li>
+                                            <li><a>API Gateway + Lambda for profile CRUD APIs</a></li>
+                                            <li><a>DynamoDB Streams + Lambda for reactive updates</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Roles, Orgs & Permissions</summary>
+                                        <ul>
+                                            <li><a>Cognito Groups / Custom Claims for student/faculty/admin</a></li>
+                                            <li><a>Verified Permissions for ABAC/RBAC policy decisions</a></li>
+                                            <li><a>EventBridge for role/permission change events</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Sessions & Device Trust</summary>
+                                        <ul>
+                                            <li><a>Cognito for token lifetimes, refresh, revocation</a></li>
+                                            <li><a>CloudFront + ALB (if needed) for session-aware edges</a></li>
+                                            <li><a>DynamoDB for device registry & session blacklist</a></li>
+                                            <li><a>Lambda@Edge (optional) for header/cookie gates</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Notifications & Preferences</summary>
+                                        <ul>
+                                            <li><a>SNS for fan-out events to services</a></li>
+                                            <li><a>SES / Pinpoint for email & SMS; preference center</a></li>
+                                            <li><a>DynamoDB for user comms preferences</a></li>
+                                            <li><a>EventBridge for “UserCreated”, “RoleChanged”, etc.</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Directory/SSO Integration (Campus)</summary>
+                                        <ul>
+                                            <li><a>Cognito Federation for SAML/OIDC to campus IdP</a></li>
+                                            <li><a>Lambda + Step Functions for nightly roster sync jobs</a></li>
+                                            <li><a>SQS DLQ for resilient sync pipeline</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                                <li>
+                                    <details>
+                                        <summary>Admin Console & Self-Service</summary>
+                                        <ul>
+                                            <li><a>CloudFront + S3 for static admin SPA hosting</a></li>
+                                            <li><a>API Gateway + Lambda for admin APIs (suspend, reset MFA)</a></li>
+                                            <li><a>Verified Permissions for admin UI policy guardrails</a></li>
+                                        </ul>
+                                    </details>
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
